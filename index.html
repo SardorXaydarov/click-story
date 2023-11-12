@@ -1,11 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Click-story</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click-story</title>
+  <!-- site logo -->
+  <link rel="icon" href="images/icons/Click-Story logo.png">
+  <!-- Bootstrap css link -->
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <!-- Normalize css link -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Inter font css -->
+  <link rel="stylesheet" href="fonts/inter/stylesheet.css">
+  <!-- Custom css link -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>Hello world</h1>
+  <!-- Wrapper -->
+  <div class="wrapper">
+
+
+    <!-- Header section -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#!">
+            <img src="images/icons/header-logo.svg" alt="header-logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#!">Истории</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Авторы</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#!">
+                  Каталог
+                </a>
+            </ul>
+            <button class="btn" type="button">Войти</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+
+    <!-- Main -->
+    <main>
+
+      <!-- News section start -->
+      <section class="news">
+        <div class="container">
+          <div class="title-box">
+            <div class="subtitle d-flex align-items-center">
+              <h5>Главная</h5>
+              <span>
+                <img src="images/icons/news-play-icon.svg" alt="news-play-icon">
+              </span>
+              <h5>Новости</h5>
+            </div>
+            <div class="title">
+              <h3>Новости</h3>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 mb-sm-3 col-sm-12 col-md-6 col-lg-4">
+              <img class="w-100" src="images/news-img.png" alt="news-img">
+              <div class="news-info">
+                <p class="date">18.05.2023</p>
+                <h3>Персонажу «Вася» добавлен костюм единорога</h3>
+                <button class="btn btn-two">Подробнее</button>
+              </div>
+            </div>
+            <div class="col-12 mb-sm-3 col-sm-12 col-md-6 col-lg-4">
+              <img class="w-100" src="images/news-img.png" alt="news-img">
+              <div class="news-info">
+                <p class="date">18.05.2023</p>
+                <h3>Опрос: какой набор вы хотели бы видеть на сайте?</h3>
+                <button class="btn btn-two">Подробнее</button>
+              </div>
+            </div>
+            <div class="col-12 mb-sm-3 col-sm-12 col-md-6 col-lg-4">
+              <img class="w-100" src="images/news-img.png" alt="news-img">
+              <div class="news-info">
+                <p class="date">18.05.2023</p>
+                <h3>Добавлено три новых персонажа: Карл, Клара и Кара</h3>
+                <button class="btn btn-two">Подробнее</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 mb-sm-3 col-sm-12 col-md-6 col-lg-4">
+              <img class="w-100" src="images/news-img.png" alt="news-img">
+              <div class="news-info">
+                <p class="date">18.05.2023</p>
+                <h3>Персонажу «Вася» добавлен костюм единорога</h3>
+                <button class="btn btn-two">Подробнее</button>
+              </div>
+            </div>
+            <div class="col-12 mb-sm-3 col-sm-12 col-md-6 col-lg-4">
+              <img class="w-100" src="images/news-img.png" alt="news-img">
+              <div class="news-info">
+                <p class="date">18.05.2023</p>
+                <h3>Опрос: какой набор вы хотели бы видеть на сайте?</h3>
+                <button class="btn btn-two">Подробнее</button>
+              </div>
+            </div>
+            <div class="col-12 mb-sm-3 col-sm-12 col-md-6 col-lg-4">
+              <img class="w-100" src="images/news-img.png" alt="news-img">
+              <div class="news-info">
+                <p class="date">18.05.2023</p>
+                <h3>Добавлено три новых персонажа: Карл, Клара и Кара</h3>
+                <button class="btn btn-two">Подробнее</button>
+              </div>
+            </div>
+            <div class="row d-flex">
+              <div class="pages d-flex">
+                <div class="page">
+                  <p class="page-number">←</p>
+                </div>
+                <div class="page">
+                  <p class="page-number">1</p>
+                </div>
+                <div class="page">
+                  <p class="page-number">2</p>
+                </div>
+                <div class="page">
+                  <p class="page-number">3</p>
+                </div>
+                <div class="page">
+                  <p class="page-number">...</p>
+                </div>
+                <div class="page">
+                  <p class="page-number">46</p>
+                </div>
+                <div class="page">
+                  <p class="page-number">47</p>
+                </div>
+                <div class="page">
+                  <p class="page-number">48</p>
+                </div>
+                <div class="page">
+                  <p class="page-number next">←</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+
+
+
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-boxes">
+          <div class="footer-box">
+            <div class="footer-box__head">
+              <img src="images/icons/header-logo.svg" alt="footer-logo">
+            </div>
+            <div class="footer-box__footer">
+              <p class="footer-description">© 2023 Click Story
+                Все права защищены</p>
+            </div>
+          </div>
+          <div class="footer-box">
+            <div class="footer-box__head">
+              <h4>Пользователю</h4>
+            </div>
+            <div class="footer-box__body">
+              <a href="#!">Правила проекта</a>
+              <a href="#!">Личный кабинет</a>
+              <a href="#!">Новости</a>
+            </div>
+            <div class="footer-box__footer">
+              <p>
+                Дизайн
+                <a class="author" href="#!"> Таня Хайден</a>
+              </p>
+            </div>
+          </div>
+          <div class="footer-box">
+            <div class="footer-box__head">
+              <h4>Информация</h4>
+            </div>
+            <div class="footer-box__body">
+              <a href="#!">Конфиденциальность</a>
+              <a href="#!">Пользовательское соглашение</a>
+            </div>
+          </div>
+          <div class="footer-box">
+            <div class="footer-box__head">
+              <h4>Обратная связь</h4>
+            </div>
+            <div class="footer-box__body">
+              <a href="#!">Написать в поддержку</a>
+              <p class="mb-3">По поводу рекламы и сотрудничества пишите на <a href="#!">info@click-story.ru</a></p> 
+              <a href="#!">
+                <img src="images/icons/vk.svg" alt="vk-icon">
+              </a>
+            </div>
+            <div class="footer-box__footer">
+              <img src="images/icons/footer-img-1.svg" alt="footer-img-1">
+              <img src="images/icons/footer-img-2.svg" alt="footer-img-2">
+              <img src="images/icons/footer-img-3.svg" alt="footer-img-1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- Bootstrap js -->
+  <script src="bootstrap/bootstrap.min.js"></script>
 </body>
+
 </html>
