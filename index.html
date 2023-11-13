@@ -47,7 +47,43 @@
                   Каталог
                 </a>
             </ul>
-            <button class="btn" type="button">Войти</button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Войти
+            </button>
+
+
+            <!-- Modal -->
+            <div class="modal fade login" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title login-title fs-5" id="exampleModalLabel">Авторизация</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body login-body">
+                    <div class="email">
+                      <label for="email">E-mail</label>
+                      <input type="email" name="email" id="email">
+                    </div>
+                    <div class="password">
+                      <label for="password">Пароль</label>
+                      <input type="password" name="password" id="password">
+                    </div>
+                    <div class="login-body__buttons">
+                      <button type="button" class="btn mt-6">Войти</button>
+                      <a class="link-one" href="#!">Забыли пароль?</a>
+                      <a class="link-two" href="#!">Ещё нет аккаунта?</a>
+                    </div>
+                  </div>
+                  <div class="register-button">
+                    <button class="btn">Зарегистрироваться</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </nav>
@@ -237,7 +273,7 @@
 
 
 
-  
+
   <!-- Bootstrap js -->
   <script src="bootstrap/bootstrap.min.js"></script>
 </body>
