@@ -26,6 +26,12 @@
     <header class="header">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
+          <div class="header-bg__one">
+            <img src="images/header-top.png" alt="header-top">
+          </div>
+          <div class="header-bg__two">
+            <img src="images/header-bottom.png" alt="header-bottom">
+          </div>
           <a class="navbar-brand" href="#!">
             <img src="images/icons/header-logo.svg" alt="header-logo">
           </a>
@@ -47,43 +53,9 @@
                   Каталог
                 </a>
             </ul>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-primary mt" data-bs-toggle="modal" data-bs-target="#auth-modal">
               Войти
             </button>
-
-
-            <!-- Modal -->
-            <div class="modal fade login" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title login-title fs-5" id="exampleModalLabel">Авторизация</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body login-body">
-                    <div class="email">
-                      <label for="email">E-mail</label>
-                      <input type="email" name="email" id="email">
-                    </div>
-                    <div class="password">
-                      <label for="password">Пароль</label>
-                      <input type="password" name="password" id="password">
-                    </div>
-                    <div class="login-body__buttons">
-                      <button type="button" class="btn mt-6">Войти</button>
-                      <a class="link-one" href="#!">Забыли пароль?</a>
-                      <a class="link-two" href="#!">Ещё нет аккаунта?</a>
-                    </div>
-                  </div>
-                  <div class="register-button">
-                    <button class="btn">Зарегистрироваться</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
       </nav>
@@ -202,8 +174,8 @@
     <!-- Footer section -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-boxes">
-          <div class="footer-box box-one">
+        <div class="row">
+          <div class="col-2 box-one">
             <div class="footer-head">
               <div class="footer-box__image">
                 <img src="images/icons/header-logo.svg" alt="logo">
@@ -213,7 +185,7 @@
               <p class="copyright">© 2023 Click Story <br> Все права защищены</p>
             </div>
           </div>
-          <div class="footer-box">
+          <div class="col-2 offset-1">
             <div class="footer-head">
               <div class="footer-box__header">
                 <h4>Пользователю</h4>
@@ -228,7 +200,7 @@
               <p class="author">Дизайн <a href="#!">Таня Хайден</a></p>
             </div>
           </div>
-          <div class="footer-box">
+          <div class="col-3 offset-1">
             <div class="footer-head">
               <div class="footer-box__header">
                 <h4>Информация</h4>
@@ -239,7 +211,7 @@
               </div>
             </div>
           </div>
-          <div class="footer-box">
+          <div class="col-3">
             <div class="footer-head">
               <div class="footer-box__header">
                 <h4>Обратная связь</h4>
@@ -272,6 +244,217 @@
 
 
 
+
+
+
+
+
+  <!-- auth modal -->
+  <div class="modal fade" id="auth-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered auth">
+      <div class="modal-content auth-content">
+        <div class="modal-header">
+          <h1 class="modal-title login-title fs-5" id="exampleModalLabel">Авторизация</h1>
+          <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+            <img src="images/icons/close-icon.svg" alt="">
+          </button>
+        </div>
+        <div class="modal-body login-body">
+          <div class="email">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="password">
+            <label for="password">Пароль</label>
+            <input type="password" name="password" id="password">
+          </div>
+          <div class="login-body__buttons">
+            <button type="button" class="btn mt-6">Войти</button>
+            <button class="btn-link" data-bs-toggle="modal" data-bs-target="#forget-password">Забыли пароль?</button>
+            <a class="link-two" href="#!">Ещё нет аккаунта?</a>
+          </div>
+        </div>
+        <div class="register-button">
+          <button class="btn" data-bs-target="#register-modal" data-bs-toggle="modal">Зарегистрироваться</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Register modal -->
+  <div class="modal fade" id="register-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog register-modal modal-dialog-centered">
+      <div class="modal-content register-content">
+        <div class="modal-header">
+          <h1 class="modal-title login-title fs-5" id="exampleModalLabel">Регистрация</h1>
+          <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+            <img src="images/icons/close-icon.svg" alt="">
+          </button>
+        </div>
+        <div class="modal-body d-flex">
+          <div class="email">
+            <div class="nickname">
+              <label>Псевдоним*</label>
+              <input type="text" name="nickname">
+            </div>
+            <div class="pochta">
+              <label>E-mail*</label>
+              <input type="email" name="email">
+            </div>
+            <div class="pw">
+              <label>Пароль*</label>
+              <input type="password" name="password">
+            </div>
+          </div>
+          <div class="code d-flex">
+            <div class="name">
+              <label>Имя</label>
+              <input type="text" name="name">
+            </div>
+            <div class="surname">
+              <label>Фамилия</label>
+              <input type="text" name="surname">
+            </div>
+            <div class="promo">
+              <label>Промо-код</label>
+              <input type="text" name="promo">
+            </div>
+          </div>
+
+        </div>
+        <div class="forget-button">
+          <p class="small-text">* Поля, обязательные для заполнения.</p>
+          <button class="btn">Зарегистрироваться</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- Forget password modal -->
+  <div class="modal fade" id="forget-password" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog forget-password modal-dialog-centered">
+      <div class="modal-content password-content">
+        <div class="modal-header">
+          <h1 class="modal-title login-title fs-5" id="exampleModalLabel">Забыли пароль?</h1>
+          <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+            <img src="images/icons/close-icon.svg" alt="">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="email">
+            <label>Укажите ваш e-mail</label>
+            <input type="email" name="email">
+          </div>
+
+        </div>
+        <div class="forget-button">
+          <button class="btn w-100" data-bs-toggle="modal" data-bs-target="#rename-password">Выслать код на смену
+            пароля</button>
+          <button class="btn-link w-100" data-bs-toggle="modal" data-bs-target="#number-password">Войти по номеру
+            телефона</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Password Number modal -->
+  <div class="modal fade" id="number-password" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog password modal-dialog-centered">
+      <div class="modal-content password-content">
+        <div class="modal-header">
+          <h1 class="modal-title login-title fs-5" id="exampleModalLabel">Авторизация</h1>
+          <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+            <img src="images/icons/close-icon.svg" alt="">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="password d-flex">
+            <label class="text-center">Введите код из SMS</label>
+            <div class="password-number">
+              <h2>1</h2>
+              <h2>6</h2>
+              <h2>8</h2>
+              <h2>4</h2>
+            </div>
+          </div>
+
+        </div>
+        <div class="forget-button">
+          <button class="btn w-100">Войти</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Rename password Modal -->
+  <div class="modal fade" id="rename-password" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog rename-password modal-dialog-centered">
+      <div class="modal-content password-content">
+        <div class="modal-header">
+          <h1 class="modal-title login-title fs-5" id="exampleModalLabel">Забыли пароль?</h1>
+          <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+            <img src="images/icons/close-icon.svg" alt="">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="password d-flex">
+            <label>Введите код, отправленный на ваш e-mail</label>
+            <div class="password-number">
+              <h2>1</h2>
+              <h2>6</h2>
+              <h2>8</h2>
+              <h2>4</h2>
+            </div>
+          </div>
+
+        </div>
+        <div class="forget-button">
+          <button class="btn w-100" data-bs-target="#new-password" data-bs-toggle="modal">Сменить пароль</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- New password Modal -->
+  <div class="modal fade" id="new-password" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog new-pw modal-dialog-centered">
+      <div class="modal-content password-content">
+        <div class="modal-header">
+          <h1 class="modal-title login-title fs-5" id="exampleModalLabel">Введите новый пароль</h1>
+          <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+            <img src="images/icons/close-icon.svg" alt="">
+          </button>
+        </div>
+        <div class="modal-body new-password d-flex">
+          <div class="password">
+            <label>Пароль</label>
+            <input type="password" name="email">
+          </div>
+          <div class="check-password">
+            <label>Подтверждение пароля</label>
+            <input type="password" name="email">
+          </div>
+
+        </div>
+        <div class="forget-button">
+          <button class="btn w-100">Сменить пароль</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- Bootstrap js -->
