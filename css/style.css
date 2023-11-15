@@ -320,7 +320,9 @@ a:focus {
 }
 
 
-
+.modal-content{
+    box-shadow: 0px 4px 10px 0px #CEE0FF;
+}
 
 /* ================ Register modal ================ */
 .register-modal {
@@ -506,7 +508,9 @@ main {
 
 
 
-
+.footer a{
+    color: #333;
+}
 
 .footer-head {
     width: 100%;
