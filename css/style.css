@@ -63,8 +63,16 @@ a:focus {
     padding-left: 0;
     padding-right: 0;
 }
-
-
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(90deg, #BEFFE8 0%, #80E0FF 100%);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #0f0;
+}
 
 /* Header section styles */
 
@@ -81,6 +89,9 @@ a:focus {
 }
 
 .header .navbar {
+    z-index: 4;
+}
+.nav-link{
     z-index: 2;
 }
 
@@ -94,7 +105,7 @@ a:focus {
 .header-bg__two {
     position: absolute;
     bottom: -25px;
-    left: 110px;
+    left: 240px;
 }
 
 
@@ -227,6 +238,17 @@ a:focus {
 
 .forget-password .password-content {
     padding: 32px 32px 70px 32px;
+}
+
+/* =============Password Number */
+.password-number{
+    width: 430px;
+}
+.password-number .password-content{
+    padding: 32px;
+}
+.password-content .password-number{
+    width: 100%;
 }
 
 
@@ -576,6 +598,11 @@ main {
     }
     .navbar-collapse .mt{
         margin-top: 20px;
+    }
+}
+@media (max-width:767px){
+    .footer .container .row>div{
+        margin-top: 2rem;
     }
 }
 @media (min-width:576px) {

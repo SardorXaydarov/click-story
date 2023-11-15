@@ -1,0 +1,128 @@
+.character-bg {
+    left: 9%;
+}
+
+.character-bg-one {
+    left: 17%;
+}
+
+.character-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.small-ellipse {
+    position: relative;
+    top: 0px;
+    left: -35px;
+}
+
+.big-ellipse {
+    position: relative;
+    top: 15px;
+    left: -65px;
+}
+
+
+
+
+
+
+/* about character section styles */
+.character {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.character-footer {
+    margin-top: 134px;
+}
+
+.character .title-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.title-box .title {
+    color: #456DBB;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.character-info .description {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.img-two {
+    margin-left: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+ 
+/* ================ MODAL */
+
+
+/* Buy modal */
+.buy{
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+.modal-body .buy h2 {
+    color: var(--dark-grey, #333);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.modal-body .buy .btn{
+    width: 56px;
+}
+.buy .buttons{
+    margin: 0 auto;
+    gap: 16px;
+}
+
+/* Dont buy modal */
+.dont-buy__dialog {
+    width: 356px;
+}
+
+.dont-buy__dialog .modal-content {
+    padding: 32px;
+}
+
+.dont-buy__dialog .modal-header {
+    padding: 0;
+}
+
+.dont-buy__dialog .dont-buy {
+    flex-direction: column;
+    gap: 34px;
+}
+
+.dont-buy__dialog .dont-buy h2 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+@media (max-width:1199px){
+    .other-btn{
+        display: none;
+    }
+}

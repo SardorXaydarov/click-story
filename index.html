@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="fonts/inter/stylesheet.css">
   <!-- Custom css link -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- Character css link -->
+  <link rel="stylesheet" href="css/character.css">
 </head>
 
 <body>
@@ -32,18 +34,21 @@
           <div class="header-bg__two">
             <img src="images/header-bottom.png" alt="header-bottom">
           </div>
-          <a class="navbar-brand" href="#!">
+          <a style="z-index: 2;" class="navbar-brand" href="#!">
             <img src="images/icons/header-logo.svg" alt="header-logo">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          <button style="z-index: 2;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div style="z-index: 2;" class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#!">Истории</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="character.html">Персонаж</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#!">Авторы</a>
@@ -175,7 +180,7 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-2 box-one">
+          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 box-one">
             <div class="footer-head">
               <div class="footer-box__image">
                 <img src="images/icons/header-logo.svg" alt="logo">
@@ -185,7 +190,7 @@
               <p class="copyright">© 2023 Click Story <br> Все права защищены</p>
             </div>
           </div>
-          <div class="col-2 offset-1">
+          <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 offset-md-1">
             <div class="footer-head">
               <div class="footer-box__header">
                 <h4>Пользователю</h4>
@@ -200,7 +205,7 @@
               <p class="author">Дизайн <a href="#!">Таня Хайден</a></p>
             </div>
           </div>
-          <div class="col-3 offset-1">
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3  offset-md-1">
             <div class="footer-head">
               <div class="footer-box__header">
                 <h4>Информация</h4>
@@ -211,7 +216,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
             <div class="footer-head">
               <div class="footer-box__header">
                 <h4>Обратная связь</h4>
@@ -240,6 +245,11 @@
       </div>
     </footer>
   </div>
+
+
+
+
+
 
 
 
@@ -367,7 +377,7 @@
 
   <!-- Password Number modal -->
   <div class="modal fade" id="number-password" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog password modal-dialog-centered">
+    <div class="modal-dialog password-number modal-dialog-centered">
       <div class="modal-content password-content">
         <div class="modal-header">
           <h1 class="modal-title login-title fs-5" id="exampleModalLabel">Авторизация</h1>
@@ -378,7 +388,7 @@
         <div class="modal-body">
           <div class="password d-flex">
             <label class="text-center">Введите код из SMS</label>
-            <div class="password-number">
+            <div class="password-number text-center">
               <h2>1</h2>
               <h2>6</h2>
               <h2>8</h2>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click-story</title>
+    <!-- site logo -->
+    <link rel="icon" href="images/icons/Click-Story logo.png">
+    <!-- Bootstrap css link -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <!-- Normalize css link -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Inter font css -->
+    <link rel="stylesheet" href="fonts/inter/stylesheet.css">
+    <!-- Custom css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Character css link -->
+    <link rel="stylesheet" href="css/character.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header section -->
+        <header class="header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="header-bg__one character-bg-one">
+                        <img src="images/header-top.png" alt="header-top">
+                    </div>
+                    <div class="header-bg__two character-bg">
+                        <img src="images/header-bottom.png" alt="header-bottom">
+                    </div>
+                    <a style="z-index: 2;" class="navbar-brand" href="#!">
+                        <img src="images/icons/header-logo.svg" alt="header-logo">
+                    </a>
+                    <button style="z-index: 2;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div style="z-index: 2;" class="collapse character-header navbar-collapse"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Истории</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#!">Персонаж</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#!">Авторы</a>
+                            </li>
+
+                        </ul>
+                        <div class="nav-right d-flex">
+                            <button type="button" class="btn btn-primary mt">Создать историю</button>
+                            <div class="other-btn">
+                                <button>
+                                    <img src="images/icons/favorite.svg" alt="favorite">
+                                    Избранное
+                                </button>
+                                <button>
+                                    <img src="images/icons/message.svg" alt="message">
+                                    15
+                                </button>
+                                <button>
+                                    <img src="images/icons/quartz.svg" alt="quartz">
+                                    250
+                                </button>
+                                <button class="profile">
+                                    <img src="images/icons/blue-ellipse.svg" alt="ellipse">
+                                    <img class="small-ellipse" src="images/icons/small-ellipse.svg" alt="ellipse">
+                                    <img class="big-ellipse" src="images/icons/big-ellipse.svg" alt="big-ellipse">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- Main section -->
+        <main>
+            <section class="about-character">
+                <div class="container">
+                    <div class="title-box">
+                        <div class="subtitle d-flex align-items-center">
+                            <h5>Главная</h5>
+                            <span>
+                                <img src="images/icons/news-play-icon.svg" alt="news-play-icon">
+                            </span>
+                            <h5>Новости</h5>
+                            <span>
+                                <img src="images/icons/news-play-icon.svg" alt="news-play-icon">
+                            </span>
+                            <h5>Персонажу «Вася» добавлен костюм единорога</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5 character">
+                            <div class="title-box">
+                                <h2 class="title">Персонажу «Вася» добавлен костюм единорога</h2>
+                                <h4 class="date">18.05.2023</h4>
+                            </div>
+                            <div class="character-info">
+                                <p class="description">Вася — неповторимый тусовщик и любитель повеселиться обзавелся
+                                    новым костюмом. Яркий, сказочный и в блестках!</p>
+                            </div>
+                            <div class="images">
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#buy">
+                                    <img src="images/card-item.png" alt="shoe">
+                                </button>
+                                <button class="img-two" type="button" data-bs-target="#dont-buy" data-bs-toggle="modal">
+                                    <img src="images/card-item.png" alt="shoe">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-7 main-img d-flex justify-content-center">
+                            <img src="images/character-img.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <!-- Footer section -->
+        <footer class="footer character-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 box-one">
+                        <div class="footer-head">
+                            <div class="footer-box__image">
+                                <img src="images/icons/header-logo.svg" alt="logo">
+                            </div>
+                        </div>
+                        <div class="footer-box__footer">
+                            <p class="copyright">© 2023 Click Story <br> Все права защищены</p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2  offset-md-1">
+                        <div class="footer-head">
+                            <div class="footer-box__header">
+                                <h4>Пользователю</h4>
+                            </div>
+                            <div class="footer-box__body">
+                                <a href="#!">Правила проекта</a>
+                                <a href="#!">Личный кабинет</a>
+                                <a href="#!">Новости</a>
+                            </div>
+                        </div>
+                        <div class="footer-box__footer">
+                            <p class="author">Дизайн <a href="#!">Таня Хайден</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3  offset-md-1">
+                        <div class="footer-head">
+                            <div class="footer-box__header">
+                                <h4>Информация</h4>
+                            </div>
+                            <div class="footer-box__body">
+                                <a href="#!">Конфиденциальность</a>
+                                <a href="#!">Пользовательское соглашение</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+                        <div class="footer-head">
+                            <div class="footer-box__header">
+                                <h4>Обратная связь</h4>
+                            </div>
+                            <div class="footer-box__body">
+                                <a href="#!">Написать в поддержку</a>
+                                <p class="support">По поводу рекламы и сотрудничества пишите на <a
+                                        href="#!">info@click-story.ru</a></p>
+                                <a href="#!">
+                                    <img src="images/icons/vk.svg" alt="vk-icon">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-box__footer socials">
+                            <a href="#!">
+                                <img src="images/icons/footer-img-1.svg" alt="footer-img-1">
+                            </a>
+                            <a href="#1">
+                                <img src="images/icons/footer-img-2.svg" alt="footer-img-2">
+                            </a>
+                            <a href="#!">
+                                <img src="images/icons/footer-img-3.svg" alt="footer-img-3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- modal -->
+    <!-- Buy modal -->
+    <div class="modal fade" id="buy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog dont-buy__dialog modal-dialog-centered">
+            <div class="modal-content password-content">
+                <div class="modal-header">
+                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="images/icons/close-icon.svg" alt="">
+                    </button>
+                </div>
+                <div class="modal-body buy">
+                    <div class="buy d-flex">
+                        <h2 class="text-center">Хотите купить?</h2>
+                        <div class="buttons d-flex">
+                            <button class="btn">Да</button>
+                            <button class="btn" data-bs-dismiss="modal" aria-label="Close">Нет</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Dont buy modal -->
+    <div class="modal fade" id="dont-buy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog dont-buy__dialog modal-dialog-centered">
+            <div class="modal-content password-content">
+                <div class="modal-header">
+                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="images/icons/close-icon.svg" alt="">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="dont-buy d-flex">
+                        <h2 class="text-center">У вас не хватает кварцев</h2>
+                        <button class="btn">Пополнить кошель</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>
