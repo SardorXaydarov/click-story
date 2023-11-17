@@ -99,13 +99,13 @@ a:focus {
     position: absolute;
     z-index: -1;
     top: -24px;
-    left: 262px;
+    left: 12%;
 }
 
 .header-bg__two {
     position: absolute;
     bottom: -25px;
-    left: 240px;
+    left: 10%;
 }
 
 
@@ -243,6 +243,11 @@ a:focus {
 /* =============Password Number */
 .password-number{
     width: 430px;
+}
+.password-number input{
+    width: 48px;
+    height: 64px;
+    text-align: center;
 }
 .password-number .password-content{
     padding: 32px;
@@ -444,7 +449,7 @@ main {
 
 .title-box .subtitle span img {
     position: relative;
-    top: -2px;
+    top: -1px;
 }
 
 .title h3 {
@@ -603,10 +608,36 @@ main {
     .navbar-collapse .mt{
         margin-top: 20px;
     }
+    .nav-link {
+        margin-left: 0;
+    }
+    .register-modal .register-content{
+        padding: 0;
+    }
+    .register-modal{
+        width: 750px;
+    }
 }
 @media (max-width:767px){
     .footer .container .row>div{
         margin-top: 2rem;
+    }
+    .register-modal{
+        width: 650px;
+    }
+    .register-modal .modal-body{
+        flex-direction: column
+    }
+    .register-content .modal-body>div{
+        width: 90%;
+        padding-left: 100px;
+    }
+    .register-content .code>div{
+        margin-left: 0;
+    }
+    .subtitle{
+        display: flex;
+        align-items: start;
     }
 }
 @media (min-width:576px) {
@@ -618,6 +649,31 @@ main {
 @media (max-width:575px) {
     .col-12 {
         margin-bottom: 1rem;
+    }
+    .modal-content{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .modal-dialog{
+        width: 100%;
+    }
+    .auth-content{
+        padding: 0;
+    }
+    .register-modal .register-content{
+        padding: 0;
+    }
+    .forget-password .password-content{
+        padding: 0;
+    }
+    .rename-password .modal-content{
+        padding: 0;
+    }
+    .new-pw .password-content{
+        padding: 0;
+    }
+    .title-box .title{
+        font-size: 10px;
     }
 }
 

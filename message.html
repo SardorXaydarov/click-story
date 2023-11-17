@@ -15,12 +15,15 @@
     <link rel="stylesheet" href="fonts/inter/stylesheet.css">
     <!-- Custom css link -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Messages css link -->
+    <link rel="stylesheet" href="css/messages.css">
     <!-- Character css link -->
     <link rel="stylesheet" href="css/character.css">
 </head>
 
 <body>
     <div class="wrapper">
+
         <!-- Header section -->
         <header class="header">
             <nav class="navbar navbar-expand-lg">
@@ -46,10 +49,10 @@
                                 <a class="nav-link" aria-current="page" href="index.html">Истории</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#!">Персонаж</a>
+                                <a class="nav-link" aria-current="page" href="character.html">Персонаж</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="message.html">Авторы</a>
+                                <a class="nav-link" href="#!">Авторы</a>
                             </li>
 
                         </ul>
@@ -80,67 +83,70 @@
             </nav>
         </header>
 
-        <!-- Main section -->
+
+
+        <!-- main section -->
         <main>
-            <section class="about-character">
+            <section class="messages">
                 <div class="container">
-                    <div class="title-box col-6 col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                        <div class="subtitle d-flex">
-                            <a style="color: #686868;" href="index.html">Главная
-                                <span>
-                                    <img src="images/icons/news-play-icon.svg" alt="news-play-icon">
-                                </span>
-                            </a>
-                            
-                            <a style="color: #686868;" href="#!">Новости
-                                <span>
-                                    <img src="images/icons/news-play-icon.svg" alt="news-play-icon">
-                                </span>
-                            </a>
-                            
-                            <a style="color: #686868;" href="message.html">Персонажу «Вася» добавлен костюм единорога</a>
-                        </div>
+                    <div class="messages-title">
+                        <h2>Уведомления</h2>
                     </div>
-                    <div class="row justify-content-between">
-                        <div class="col-xxl-5 col-xl-5 col-lg-4 col-md-12 col-sm-12 character">
-                            <div class="title-box">
-                                <h2 class="title">Персонажу «Вася» добавлен костюм единорога</h2>
-                                <h4 class="date">18.05.2023</h4>
-                            </div>
-                            <div class="character-info">
-                                <p class="description">Вася — неповторимый тусовщик и любитель повеселиться обзавелся
-                                    новым костюмом. Яркий, сказочный и в блестках!</p>
-                            </div>
-                            <div class="images">
-                                <div class="cloth-one cloth">
-                                    <button class="img-two" type="button" data-bs-target="#buy" data-bs-toggle="modal">
-                                        <img class="shoe" src="images/clothes.png" alt="shoe">
-                                        <img style="background: transparent;" class="lock"
-                                            src="images/icons/lock-2-line.svg" alt="lock">
-                                    </button>
-                                <p>100 кварцев</p>
-                                </div>
-                                <div class="cloth">
-                                    <button class="img-two" type="button" data-bs-target="#dont-buy"
-                                        data-bs-toggle="modal">
-                                        <img class="shoe" src="images/clothes.png" alt="shoe">
-                                        <img style="background: transparent;" class="lock"
-                                            src="images/icons/lock-2-line.svg" alt="lock">
-                                    </button>
-                                    <p>100 кварцев</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 main-img d-flex justify-content-center">
-                            <img style="border: 1px solid #d0d0d0; background: #f8f8fa; border-radius: 5px;"
-                                src="images/character-img.png" alt="img">
+                    <div class="tabs-title">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="all-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">Все (15)</button>
+                            </li>
+                            <div class="line"></div>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="new-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    aria-controls="profile-tab-pane" aria-selected="false">Новое в подписках
+                                    (3)</button>
+                            </li>
+                            <div class="line"></div>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="like-tab" data-bs-toggle="tab"
+                                    data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                    aria-controls="contact-tab-pane" aria-selected="false">Лайки (10)</button>
+                            </li>
+                            <div class="line"></div>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="commnets-tab" data-bs-toggle="tab"
+                                    data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                    aria-controls="contact-tab-pane" aria-selected="false">Комментарии (2)</button>
+                            </li>
+                            <div class="line"></div>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="commnets-tab" data-bs-toggle="tab"
+                                    data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                    aria-controls="contact-tab-pane" aria-selected="false">Подписки (2)</button>
+                            </li>
+                            <div class="line"></div>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="commnets-tab" data-bs-toggle="tab"
+                                    data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                    aria-controls="contact-tab-pane" aria-selected="false">Достижения (1)</button>
+                            </li>
+                            <div class="line"></div>
+                        </ul>
+                    </div>
+                    <div class="tabs-content">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">...</div>
+                            <div class="tab-pane fade" id="new-tab-pane" role="tabpanel"
+                                aria-labelledby="profile-tab" tabindex="0">...</div>
+                            <div class="tab-pane fade" id="like-tab-pane" role="tabpanel"
+                                aria-labelledby="contact-tab" tabindex="0">...</div>
+                            
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-
 
         <!-- Footer section -->
         <footer class="footer character-footer">
@@ -211,61 +217,15 @@
                 </div>
             </div>
         </footer>
+
+
     </div>
 
 
 
 
 
-
-
-
-
-
-    <!-- modal -->
-    <!-- Buy modal -->
-    <div class="modal fade" id="buy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog dont-buy__dialog modal-dialog-centered">
-            <div class="modal-content password-content">
-                <div class="modal-header">
-                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                        <img src="images/icons/close-icon.svg" alt="">
-                    </button>
-                </div>
-                <div class="modal-body buy">
-                    <div class="buy d-flex">
-                        <h2 class="text-center">Хотите купить?</h2>
-                        <div class="buttons d-flex">
-                            <button class="btn">Да</button>
-                            <button class="btn" data-bs-dismiss="modal" aria-label="Close">Нет</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Dont buy modal -->
-    <div class="modal fade" id="dont-buy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog dont-buy__dialog modal-dialog-centered">
-            <div class="modal-content password-content">
-                <div class="modal-header">
-                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                        <img src="images/icons/close-icon.svg" alt="">
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="dont-buy d-flex">
-                        <h2 class="text-center">У вас не хватает кварцев</h2>
-                        <button class="btn">Пополнить кошель</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+    <!-- Bootstrap js -->
     <script src="bootstrap/bootstrap.min.js"></script>
 </body>
 
