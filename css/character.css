@@ -1,9 +1,9 @@
 .character-bg {
-    left: 3%;
+    left: 9%;
 }
 
 .character-bg-one {
-    left: 12%;
+    left: 17%;
 }
 
 .character-header {
@@ -39,6 +39,7 @@
 .character-footer {
     margin-top: 134px;
 }
+
 
 .character .title-box {
     display: flex;
@@ -160,7 +161,11 @@
 
 
 
-
+@media (min-width:1200px){
+    .about-character .main-img img{
+        padding: 0 90px;
+    }
+}
 
 @media (max-width:1199px) {
     .other-btn {

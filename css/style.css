@@ -99,13 +99,13 @@ a:focus {
     position: absolute;
     z-index: -1;
     top: -24px;
-    left: 12%;
+    left: 17%;
 }
 
 .header-bg__two {
     position: absolute;
     bottom: -25px;
-    left: 10%;
+    left: 15%;
 }
 
 
@@ -198,7 +198,6 @@ a:focus {
 .modal-body input {
     border-radius: 5px;
     border: 1px solid #d0d0d0;
-    padding: 16px;
 }
 
 .modal-body label {
@@ -442,6 +441,9 @@ main {
 }
 
 /* News section styles */
+.title-box .subtitle{
+    flex-wrap: wrap;
+}
 .title-box .subtitle h5 {
     color: #686868;
     font-size: 14px;
@@ -519,7 +521,6 @@ main {
 
 .footer-head {
     width: 100%;
-    height: 142px;
     display: flex;
     gap: 24px;
     flex-direction: column;
@@ -531,8 +532,12 @@ main {
     row-gap: 16px;
 }
 
-.footer-box__footer {
-    margin-top: 64px;
+.box-one .footer-box__footer {
+
+    padding-top: 184px;
+}
+.footer-box__footer{
+    padding-top: 64px;
 }
 
 .footer-box__footer.socials {
@@ -629,15 +634,19 @@ main {
         flex-direction: column
     }
     .register-content .modal-body>div{
-        width: 90%;
-        padding-left: 100px;
+        width: 100%;
     }
     .register-content .code>div{
         margin-left: 0;
     }
-    .subtitle{
-        display: flex;
-        align-items: start;
+    .footer-box__footer{
+        padding-top: 2rem;
+    }
+    .box-one .footer-box__footer{
+        padding-top: 2rem;
+    }
+    .password-content{
+        padding: 60px 0;
     }
 }
 @media (min-width:576px) {
@@ -651,7 +660,7 @@ main {
         margin-bottom: 1rem;
     }
     .modal-content{
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
     .modal-dialog{

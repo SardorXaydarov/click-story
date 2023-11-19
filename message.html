@@ -17,8 +17,6 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Messages css link -->
     <link rel="stylesheet" href="css/messages.css">
-    <!-- Character css link -->
-    <link rel="stylesheet" href="css/character.css">
 </head>
 
 <body>
@@ -28,13 +26,13 @@
         <header class="header">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <div class="header-bg__one character-bg-one">
+                    <div class="header-bg__one msg-bg__one character-bg-one">
                         <img src="images/header-top.png" alt="header-top">
                     </div>
                     <div class="header-bg__two character-bg">
                         <img src="images/header-bottom.png" alt="header-bottom">
                     </div>
-                    <a style="z-index: 2;" class="navbar-brand" href="#">
+                    <a style="z-index: 2;" class="navbar-brand" href="index.html">
                         <img src="images/icons/header-logo.svg" alt="header-logo">
                     </a>
                     <button style="z-index: 2;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -96,52 +94,213 @@
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="all-tab" data-bs-toggle="tab"
-                                    data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    data-bs-target="#all-tab-pane" type="button" role="tab"
                                     aria-controls="home-tab-pane" aria-selected="true">Все (15)</button>
                             </li>
-                            <div class="line"></div>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="new-tab" data-bs-toggle="tab"
-                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    data-bs-target="#new-tab-pane" type="button" role="tab"
                                     aria-controls="profile-tab-pane" aria-selected="false">Новое в подписках
                                     (3)</button>
                             </li>
-                            <div class="line"></div>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="like-tab" data-bs-toggle="tab"
-                                    data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                    data-bs-target="#like-tab-pane" type="button" role="tab"
                                     aria-controls="contact-tab-pane" aria-selected="false">Лайки (10)</button>
                             </li>
-                            <div class="line"></div>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="commnets-tab" data-bs-toggle="tab"
-                                    data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                    data-bs-target="#comments-tab-pane" type="button" role="tab"
                                     aria-controls="contact-tab-pane" aria-selected="false">Комментарии (2)</button>
                             </li>
-                            <div class="line"></div>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="commnets-tab" data-bs-toggle="tab"
-                                    data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                    data-bs-target="#subscribe-tab-pane" type="button" role="tab"
                                     aria-controls="contact-tab-pane" aria-selected="false">Подписки (2)</button>
                             </li>
-                            <div class="line"></div>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="commnets-tab" data-bs-toggle="tab"
-                                    data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                    data-bs-target="#achievements-tab-pane" type="button" role="tab"
                                     aria-controls="contact-tab-pane" aria-selected="false">Достижения (1)</button>
                             </li>
-                            <div class="line"></div>
                         </ul>
                     </div>
+
+
+
+
                     <div class="tabs-content">
                         <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel"
-                                aria-labelledby="home-tab" tabindex="0">...</div>
-                            <div class="tab-pane fade" id="new-tab-pane" role="tabpanel"
-                                aria-labelledby="profile-tab" tabindex="0">...</div>
-                            <div class="tab-pane fade" id="like-tab-pane" role="tabpanel"
-                                aria-labelledby="contact-tab" tabindex="0">...</div>
-                            
+
+
+
+                            <!-- All tab section -->
+                            <div class="tab-pane fade show active d-flex" id="all-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">
+                                <div class="description d-flex">
+                                    <div class="profil">
+                                        <button type="button">
+                                            <img src="images/icons/profile-icon.png" alt="profile-icon">
+                                        </button>
+                                    </div>
+                                    <div class="content">
+                                        <div class="content-header">
+                                            <h2 class="content-header__name">Андрей Петров</h2>
+                                            <img class="voice" src="images/icons/voice-icon.svg" alt="microphone">
+                                            <h3>25</h3>
+                                            <p>24.08.2023</p>
+                                        </div>
+                                        <div class="content-body">
+                                            <p>оставил(a) комментарий к <a class="comment-video" href="#!">Цветущая
+                                                    долина</a>.
+                                            </p>
+                                        </div>
+                                        <div class="content-footer">
+                                            <h4 class="content-description">Это самая нелепая история, которую я читал,
+                                                но
+                                                мне
+                                                почему-то нравится!</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="description d-flex">
+                                    <div class="profil">
+                                        <button type="button">
+                                            <img src="images/icons/profile-icon.png" alt="profile-icon">
+                                        </button>
+                                    </div>
+                                    <div class="content">
+                                        <div class="content-header">
+                                            <h2 class="content-header__name">Аля Вишнева</h2>
+                                            <img class="voice" src="images/icons/voice-icon.svg" alt="microphone">
+                                            <h3>25</h3>
+                                            <p>24.08.2023</p>
+                                        </div>
+                                        <div class="content-body">
+                                            <p>подписался(лась) на вас.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="description d-flex">
+                                    <div class="profil">
+                                        <button type="button">
+                                            <img src="images/icons/profile-icon.png" alt="profile-icon">
+                                        </button>
+                                    </div>
+                                    <div class="content">
+                                        <div class="content-header">
+                                            <h2 class="content-header__name">Аля Вишнева</h2>
+                                            <img class="voice" src="images/icons/voice-icon.svg" alt="microphone">
+                                            <h3>25</h3>
+                                            <p>24.08.2023</p>
+                                        </div>
+                                        <div class="content-body">
+                                            <p>поставил(а) лайк в истории <a class="comment-video" href="#!">Цветущая
+                                                    долина</a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="description d-flex">
+                                    <div class="profil">
+                                        <button type="button">
+                                            <img src="images/icons/profile-icon.png" alt="profile-icon">
+                                        </button>
+                                    </div>
+                                    <div class="content">
+                                        <div class="content-header">
+                                            <h2 class="content-header__name">Эдик Паховски</h2>
+                                            <img class="voice" src="images/icons/voice-icon.svg" alt="microphone">
+                                            <h3>25</h3>
+                                            <p>24.08.2023</p>
+                                        </div>
+                                        <div class="content-body">
+                                            <p>добавила(а) новую главу в истории <a href="#!" class="comment-video">Твой
+                                                    новый мир</a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="description d-flex">
+                                    <div class="profil">
+                                        <button type="button">
+                                            <img src="images/icons/profile-icon.png" alt="profile-icon">
+                                        </button>
+                                    </div>
+                                    <div class="content">
+                                        <div class="content-header">
+                                            <h2 class="content-header__name">Андрей Петров</h2>
+                                            <img class="voice" src="images/icons/voice-icon.svg" alt="microphone">
+                                            <h3>25</h3>
+                                            <p>24.08.2023</p>
+                                        </div>
+                                        <div class="content-body">
+                                            <p>поставил(а) лайк истории <a href="#!" class="comment-video">Подлецу все к
+                                                    лицу</a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="description new-anchiviment d-flex">
+                                    <div class="profil">
+                                        <button type="button">
+                                            <img src="images/icons/voice-icon.svg" alt="microphone">
+                                        </button>
+                                    </div>
+                                    <div class="content">
+                                        <div class="content-header">
+                                            <h3>Вы получили достижение <h2>«Начинающий режиссер»</h2>
+                                            </h3>
+                                            <p>24.08.2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="description d-flex">
+                                    <a href="#!" class="more">Загрузить еще</a>
+                                </div>
+
+                            </div>
+
+
+
+
+                            <!-- New tab section -->
+                            <div class="tab-pane fade" id="new-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                                tabindex="0">
+
+                            </div>
+
+
+
+                            <!-- Likes tab section -->
+                            <div class="tab-pane fade" id="like-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                                tabindex="0">
+
+                            </div>
+
+
+
+
+                            <!-- Comments tab section -->
+                            <div class="tab-pane fade show" id="comments-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">1</div>
+
+
+
+
+                            <!-- Subscribe tab section -->
+                            <div class="tab-pane fade" id="subscribe-tab-pane" role="tabpanel"
+                                aria-labelledby="profile-tab" tabindex="0">2</div>
+
+
+
+                            <!-- Achievements tab section -->
+                            <div class="tab-pane fade" id="achievements-tab-pane" role="tabpanel"
+                                aria-labelledby="contact-tab" tabindex="0">3</div>
                         </div>
                     </div>
                 </div>
@@ -149,7 +308,7 @@
         </main>
 
         <!-- Footer section -->
-        <footer class="footer character-footer">
+        <footer class="footer msg-footer">
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 box-one">
