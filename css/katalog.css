@@ -1,0 +1,187 @@
+.sayohat {
+    border-radius: 5px;
+    padding: 24px;
+    background: #EBF2FF;
+}
+
+.sayohat .col-4 {
+    padding: 0;
+}
+
+.sayohat .sayohat-img {
+    border-radius: 5px;
+    border: 1px solid#D0D0D0;
+}
+
+.sayohat-info {
+    margin-left: 24px;
+}
+
+.info-name {
+    color: #456DBB;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.info-description {
+    color: #333;
+    width: 730px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 8px 0;
+    line-height: 140%;
+}
+
+.info-btn {
+    color: #FFF;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 5px;
+    background: #456DBB;
+    padding: 8px;
+}
+
+
+/* Sayohat body */
+
+.sayohat-body {
+    gap: 24px;
+    margin-top: 32.5px;
+}
+
+.statistics>div {
+    gap: 28px;
+}
+
+.statistics-one {
+    gap: 4px;
+}
+
+
+/* sayohat footer */
+.footer-boxes {
+    justify-content: space-between;
+    margin-top: 32.5px;
+}
+
+.footer-name h4 {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-card {
+    gap: 8px;
+}
+
+.footer-card__three {
+    display: flex;
+    gap: 4px;
+}
+
+.footer-card .footer-title h3 {
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer-subtitle h4 {
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Inter;
+}
+
+/* Contents section */
+.contents {
+    display: flex;
+    gap: 30px;
+}
+
+.contents .title {
+    margin-top: 2rem;
+    color: #456DBB;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.content-item {
+    border-radius: 5px;
+    padding: 16px;
+    background: #EBF2FF;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.content-item__header {
+    gap: 8px;
+}
+
+.content-item__header span {
+    color: #686868;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.content-item__header h4 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.content-item__body {
+    gap: 16px;
+}
+
+.show-more-btn {
+    margin-top: 24px;
+    color: #456DBB;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 41px;
+}
+
+/* Reviews */
+.reviews-items{
+    gap: 24px;
+}
+.reviews .link-one {
+    margin-bottom: 2rem;
+}
+
+.review-item {
+    gap: 16px;
+}
+
+.review-content {
+    gap: 8px;
+}
+
+.content-header {
+    gap: 8px;
+}
+
+.content-name h2 {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.content-body h4 {
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.content-footer-two p {
+    color:#333;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn-link__two{
+    margin-top: 24px;
+    text-align: right;
+}

@@ -181,6 +181,10 @@
     }
 }
 @media (max-width:992px){
+    .character-header{
+        flex-direction: column;
+        align-items: start;
+    }
     .character-info .description{
         font-size: 14px;
     }

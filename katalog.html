@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click-story</title>
+    <!-- site logo -->
+    <link rel="icon" href="images/icons/Click-Story logo.png">
+    <!-- Bootstrap css link -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <!-- Normalize css link -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Inter font css -->
+    <link rel="stylesheet" href="fonts/inter/stylesheet.css">
+    <!-- Katalog css link -->
+    <link rel="stylesheet" href="css/katalog.css">
+    <!-- Custom css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Character css link -->
+    <link rel="stylesheet" href="css/character.css">
+    <!-- Msg css link -->
+    <link rel="stylesheet" href="css/messages.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header section -->
+        <header class="header">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="header-bg__one character-bg-one">
+                        <img src="images/header-top.png" alt="header-top">
+                    </div>
+                    <div class="header-bg__two character-bg">
+                        <img src="images/header-bottom.png" alt="header-bottom">
+                    </div>
+                    <a style="z-index: 2;" class="navbar-brand" href="index.html">
+                        <img src="images/icons/header-logo.svg" alt="header-logo">
+                    </a>
+                    <button style="z-index: 2;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div style="z-index: 2;" class="collapse character-header navbar-collapse"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Истории</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="character.html">Персонаж</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#!">Каталог</a>
+                            </li>
+                        </ul>
+                        <div class="nav-right d-flex">
+                            <button type="button" class="btn btn-primary mt">Создать историю</button>
+                            <div class="other-btn">
+                                <button>
+                                    <img src="images/icons/favorite.svg" alt="favorite">
+                                    Избранное
+                                </button>
+                                <button>
+                                    <img src="images/icons/message.svg" alt="message">
+                                    15
+                                </button>
+                                <button>
+                                    <img src="images/icons/quartz.svg" alt="quartz">
+                                    250
+                                </button>
+                                <button class="profile">
+                                    <img src="images/icons/blue-ellipse.svg" alt="ellipse">
+                                    <img class="small-ellipse" src="images/icons/small-ellipse.svg" alt="ellipse">
+                                    <img class="big-ellipse" src="images/icons/big-ellipse.svg" alt="big-ellipse">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- Main section -->
+        <main>
+            <section class="journey">
+                <div class="container">
+                    <div class="sayohat">
+                        <div class="sayohat-header d-flex" style="margin-top: 0;">
+                            <div class="col-4 sayohot-img">
+                                <img src="images/sayohat-head.png" alt="journey">
+                            </div>
+                            <div class="col-8 sayohat-info">
+                                <h1 class="info-name">Путешествие в Срезиземье: Коралловые порталы</h1>
+                                <p class="info-description">Есть над чем задуматься: предприниматели в сети интернет,
+                                    инициированные исключительно синтетически, своевременно верифицированы. Безусловно,
+                                    синтетическое тестирование говорит о возможностях экономической целесообразности
+                                    принимаемых решений. Есть над чем задуматься: предприниматели в сети интернет,
+                                    инициированные исключительно синтетически, объективно рассмотрены соответствующими
+                                    инстанциями.</p>
+                                <button class="info-btn" type="button">Фэнтэзи</button>
+                            </div>
+                        </div>
+
+                        <div class="sayohat-body d-flex align-items-center">
+                            <div class="statistics">
+                                <div class="statistics-item d-flex">
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-1.svg" alt="img-1">
+                                        <p>10</p>
+                                    </div>
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-2.svg" alt="img-2">
+                                        <p>15</p>
+                                    </div>
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-3.svg" alt="img-3">
+                                        <p>25</p>
+                                    </div>
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-4.svg" alt="img-4">
+                                        <p>25</p>
+                                    </div>
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-5.svg" alt="img-5">
+                                        <p>15</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="journey-btn">
+                                <button class="btn">Смотреть историю</button>
+                            </div>
+                        </div>
+
+                        <div class="sayohat-footer">
+                            <div class="footer-boxes d-flex">
+                                <div class="footer-card d-flex align-items-center">
+                                    <div class="footer-img">
+                                        <img src="images/icons/sayohat-footer.svg" alt="icon">
+                                    </div>
+                                    <div class="footer-name">
+                                        <h4>Лара Арт</h4>
+                                    </div>
+                                    <div class="footer-voice footer-card__three d-flex align-items-center">
+                                        <img src="images/icons/voice-icon.svg" alt="microphone">
+                                        <p>25</p>
+                                    </div>
+                                </div>
+                                <div class="footer-card d-flex flex-column align-items-center">
+                                    <div class="footer-title">
+                                        <h3>Статус</h3>
+                                    </div>
+                                    <div class="footer-subtitle">
+                                        <h4>В процессе</h4>
+                                    </div>
+                                </div>
+                                <div class="footer-card d-flex flex-column align-items-center">
+                                    <div class="footer-title">
+                                        <h3>Дата публикации</h3>
+                                    </div>
+                                    <div class="footer-subtitle">
+                                        <h4>20.07.2023</h4>
+                                    </div>
+                                </div>
+                                <div class="footer-card d-flex flex-column align-items-center">
+                                    <div class="footer-title">
+                                        <h3>Последнее обновление</h3>
+                                    </div>
+                                    <div class="footer-subtitle">
+                                        <h4>24.08.2023</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contents">
+                        <div class="content col-6">
+                            <h2 class="title">Оглавление</h2>
+                            <div class="content-item">
+                                <div class="content-item__header d-flex align-items-center">
+                                    <span>01</span>
+                                    <h4>Темный лес и его обитатели</h4>
+                                </div>
+                                <div class="content-item__body d-flex">
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-1.svg" alt="img-1">
+                                        <p>10</p>
+                                    </div>
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-2.svg" alt="img-2">
+                                        <p>15</p>
+                                    </div>
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-4.svg" alt="img-4">
+                                        <p>25</p>
+                                    </div>
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-5.svg" alt="img-5">
+                                        <p>15</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="content-item__header d-flex align-items-center">
+                                    <span>02</span>
+                                    <h4>Знакомство с дриадами</h4>
+                                </div>
+                                <div class="content-item__body d-flex">
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-1.svg" alt="img-1">
+                                        <p>10</p>
+                                    </div>
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-2.svg" alt="img-2">
+                                        <p>15</p>
+                                    </div>
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-4.svg" alt="img-4">
+                                        <p>25</p>
+                                    </div>
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-5.svg" alt="img-5">
+                                        <p>15</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="content-item__header d-flex align-items-center">
+                                    <span>03</span>
+                                    <h4>Духи леса</h4>
+                                </div>
+                                <div class="content-item__body d-flex">
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-1.svg" alt="img-1">
+                                        <p>10</p>
+                                    </div>
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-2.svg" alt="img-2">
+                                        <p>15</p>
+                                    </div>
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-4.svg" alt="img-4">
+                                        <p>25</p>
+                                    </div>
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-5.svg" alt="img-5">
+                                        <p>15</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-item">
+                                <div class="content-item__header d-flex align-items-center">
+                                    <span>04</span>
+                                    <h4>Лисица-демон Макото</h4>
+                                </div>
+                                <div class="content-item__body d-flex">
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-1.svg" alt="img-1">
+                                        <p>10</p>
+                                    </div>
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-2.svg" alt="img-2">
+                                        <p>15</p>
+                                    </div>
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-4.svg" alt="img-4">
+                                        <p>25</p>
+                                    </div>
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-5.svg" alt="img-5">
+                                        <p>15</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-item" style="padding-bottom: 0;">
+                                <div class="content-item__header d-flex align-items-center">
+                                    <span>05</span>
+                                    <h4>Встреча с колдуньей Фреей</h4>
+                                </div>
+                                <div class="content-item__body d-flex">
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-1.svg" alt="img-1">
+                                        <p>10</p>
+                                    </div>
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-2.svg" alt="img-2">
+                                        <p>15</p>
+                                    </div>
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-4.svg" alt="img-4">
+                                        <p>25</p>
+                                    </div>
+                                    <div class="statistics-one d-flex align-items-center">
+                                        <img src="images/icons/img-5.svg" alt="img-5">
+                                        <p>15</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="show-more-btn d-flex justify-content-start" type="button">Показать больше
+                                глав</button>
+                        </div>
+
+                        <div class="reviews col-6">
+                            <h2 class="title">Рецензии</h2>
+                            <button class="btn-link link-one" type="button">Оставить рецензию</button>
+                            <div class="reviews-items d-flex flex-column">
+                                <div class="review-item d-flex">
+                                    <div class="review-profile">
+                                        <img src="images/icons/profile-icon.png" alt="profile-icon">
+                                    </div>
+                                    <div class="review-content d-flex flex-column">
+                                        <div class="content-header d-flex align-items-center">
+                                            <div class="content-name">
+                                                <h2>Рита Старк</h2>
+                                            </div>
+                                            <div class="content-voices d-flex align-items-center">
+                                                <img src="images/icons/voice-icon.svg" alt="voice-icon">
+                                                <p>3</p>
+                                            </div>
+                                        </div>
+                                        <div class="content-body">
+                                            <h4>Волшебная сказка!</h4>
+                                        </div>
+                                        <div class="content-footer-two">
+                                            <p>Когда я начала смотреть эту историю, я поразилась, как здорово прописаны
+                                                диалоги у автора, насколько изящные обороты речи и живые персонажи!
+                                                Начинаешь за них переживать, как за себя! </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-item d-flex">
+                                    <div class="review-profile">
+                                        <img src="images/icons/profile-icon.png" alt="profile-icon">
+                                    </div>
+                                    <div class="review-content d-flex flex-column">
+                                        <div class="content-header d-flex align-items-center">
+                                            <div class="content-name">
+                                                <h2>Максим Воронов</h2>
+                                            </div>
+                                            <div class="content-voices d-flex align-items-center">
+                                                <img src="images/icons/voice-icon.svg" alt="voice-icon">
+                                                <p>8</p>
+                                            </div>
+                                        </div>
+                                        <div class="content-body">
+                                            <h4>Наивно как-то</h4>
+                                        </div>
+                                        <div class="content-footer-two">
+                                            <p>Не знаю, слишком наивно и по-детски написано, какие-то фантазии
+                                                семилетнего. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-item d-flex">
+                                    <div class="review-profile">
+                                        <img src="images/icons/profile-icon.png" alt="profile-icon">
+                                    </div>
+                                    <div class="review-content d-flex flex-column">
+                                        <div class="content-header d-flex align-items-center">
+                                            <div class="content-name">
+                                                <h2>Гончарова</h2>
+                                            </div>
+                                            <div class="content-voices d-flex align-items-center">
+                                                <img src="images/icons/voice-icon.svg" alt="voice-icon">
+                                                <p>20</p>
+                                            </div>
+                                        </div>
+                                        <div class="content-body">
+                                            <h4>Прекрасная добрая история</h4>
+                                        </div>
+                                        <div class="content-footer-two">
+                                            <p>История хорошая, интересная и добрая. Персонажи классные, живые и
+                                                интересные. Я с удовольствием посмотрела. Советую всем!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-link__two">
+                                <button class="btn-link" type="button">Показать больше рецензий</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <!-- Footer section -->
+        <footer class="footer msg-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 box-one">
+                        <div class="footer-head">
+                            <div class="footer-box__image">
+                                <img src="images/icons/header-logo.svg" alt="logo">
+                            </div>
+                        </div>
+                        <div class="footer-box__footer">
+                            <p class="copyright">© 2023 Click Story Все права защищены</p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2  offset-md-1">
+                        <div class="footer-head">
+                            <div class="footer-box__header">
+                                <h4>Пользователю</h4>
+                            </div>
+                            <div class="footer-box__body">
+                                <a href="#!">Правила проекта</a>
+                                <a href="#!">Личный кабинет</a>
+                                <a href="#!">Новости</a>
+                            </div>
+                        </div>
+                        <div class="footer-box__footer">
+                            <p class="author">Дизайн <a href="#!">Таня Хайден</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3  offset-md-1">
+                        <div class="footer-head">
+                            <div class="footer-box__header">
+                                <h4>Информация</h4>
+                            </div>
+                            <div class="footer-box__body">
+                                <a href="#!">Конфиденциальность</a>
+                                <a href="#!">Пользовательское соглашение</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+                        <div class="footer-head">
+                            <div class="footer-box__header">
+                                <h4>Обратная связь</h4>
+                            </div>
+                            <div class="footer-box__body">
+                                <a href="#!">Написать в поддержку</a>
+                                <p class="support">По поводу рекламы и сотрудничества пишите на <a
+                                        href="#!">info@click-story.ru</a></p>
+                                <a href="#!">
+                                    <img src="images/icons/vk.svg" alt="vk-icon">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-box__footer socials">
+                            <a href="#!">
+                                <img src="images/icons/footer-img-1.svg" alt="footer-img-1">
+                            </a>
+                            <a href="#1">
+                                <img src="images/icons/footer-img-2.svg" alt="footer-img-2">
+                            </a>
+                            <a href="#!">
+                                <img src="images/icons/footer-img-3.svg" alt="footer-img-3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Bootstrap js -->
+    <script src="bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>

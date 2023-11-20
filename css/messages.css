@@ -1,6 +1,7 @@
-.msg-bg__one{
+.msg-bg__one {
     left: 17%;
 }
+
 .header-bg__two {
     left: 9%;
 }
@@ -15,7 +16,6 @@
     color: #686868;
     font-size: 16px;
     font-weight: 400;
-    font-size: 16px;
     padding: 0 30px 15px 30px;
     margin-left: 0;
     position: relative;
@@ -50,7 +50,7 @@
 .nav-tabs .nav-link.active::before {
     position: absolute;
     content: "";
-    top: 36px;
+    top: 35px;
     left: 0;
     width: 100%;
     height: 2px;
@@ -86,8 +86,8 @@
 
 
 /* Tabs content */
-#all-tab-pane {
-    flex-direction: column;
+
+.tab-wrapper {
     gap: 32px;
 }
 
@@ -178,38 +178,132 @@
 }
 
 .new-anchiviment h2 {
-    color:#333;
+    color: #333;
     font-size: 16px;
     font-weight: 700;
     margin-right: 8px;
 }
 
-.description .more{
+.description .more {
     text-decoration: dashed;
-}   
-
-
-
-
-
-
-/* New tab pane */
-
-#new-tab-pane{
-    display: flex;
-    gap: 32px;
 }
 
-
-/* Like tab pane  */
-#like-tab-pane{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-
-
-
-.msg-footer{
+.msg-footer {
     margin-top: 64px;
+}
+
+
+/* Show more */
+.show-more-text{
+    display: none;
+}
+.more-text{
+    gap: 32px;
+}
+
+.show-more-text--show{
+    display: block;
+}
+
+
+
+/* Media start */
+@media (max-width:1200px) {
+    .other-btn {
+        display: none;
+    }
+
+    .nav-tabs::before {
+        width: 932px;
+    }
+
+    .tabs-title .nav-link {
+        padding: 0 20px 15px 20px;
+    }
+}
+
+@media (max-width:991px) {
+    .nav-tabs::before {
+        display: none;
+    }
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active::before {
+        top: 19px;
+    }
+}
+@media (max-width:767px){
+    .footer{
+        padding: 15px 0;
+    }
+    .footer .row{
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width:576px) {
+    .tabs-title .nav-link{
+        font-size: 13px;
+        padding: 0 10px 20px 10px;
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+        font-size: 13px;
+    }
+    .messages .container {
+        gap: 30px;
+    }
+
+    .profil img {
+        width: 35px;
+        height: 35px;
+    }
+    .content-header .content-header__name{
+        font-size: 14px;
+    }
+    .content-header h3,
+    .content-header p
+    {
+        font-size: 13px;
+    }
+    .content-body p {
+        font-size: 13px;
+    }
+
+    .content>div {
+        position: relative;
+        left: -15px;
+    }
+    .comment-video{
+        font-size: 13px;
+    }
+
+    .content-footer {
+        padding: 10px;
+    }
+    .content-footer .content-description{
+        font-size: 13px;
+    }
+
+    .content {
+        gap: 5px;
+    }
+    .new-anchiviment h3{
+        font-size: 12px;
+    }
+    .new-anchiviment h2{
+        font-size: 13px;
+    }
+    .new-anchiviment .content-header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .description .more{
+        font-size: 13px;
+        position: relative;
+        left: 10px;
+    }
+    .msg-footer{
+        padding: 0;
+    }
 }
